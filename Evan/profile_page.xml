@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Vince Adhar"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:fontFamily="@font/typo_round" />
+    <TextView
+        android:id="@+id/jobprospect"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Job Prospect"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/hack_regular" />
+    <TextView
+        android:id="@+id/skills"
+        android:layout_below="@+id/jobprospect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Skills"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="12dp"
+        android:fontFamily="@font/hack_regular" />
+    <TextView
+        android:id="@+id/skill1"
+        android:layout_below="@id/skills"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shape1"
+        android:hint="Skill 1"/>
+    <TextView
+        android:id="@+id/skill2"
+        android:layout_below="@id/skills"
+        android:layout_toRightOf="@+id/skill1"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="@drawable/shape2"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Skill 2"/>
+    <TextView
+        android:id="@+id/skill3"
+        android:layout_below="@id/skills"
+        android:layout_toRightOf="@id/skill2"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shape3"
+        android:hint="Skill 3"/>
+    <TextView
+        android:id="@+id/settings"
+        android:layout_below="@+id/skill1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Settings"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="12dp"
+        android:fontFamily="@font/hack_regular" />
+    <Button
+        android:id="@+id/profilesetting"
+        android:layout_below="@id/settings"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:text="Profile Setting"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/hack_regular"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/appsetting"
+        android:layout_below="@id/profilesetting"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:text="App Setting"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/hack_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/aboutapp"
+        android:layout_below="@id/appsetting"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:text="About App"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/hack_regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/myaccount"
+        android:layout_below="@+id/aboutapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:fontFamily="@font/hack_regular" />
+    <Button
+        android:id="@+id/switchaccount"
+        android:layout_below="@id/myaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:text="Switch to Recruiter Account"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/hack_regular"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4D96FF"/>
+    <Button
+        android:id="@+id/logout"
+        android:layout_below="@id/switchaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:text="Log Out"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/hack_regular"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF0000"/>
+</RelativeLayout>
