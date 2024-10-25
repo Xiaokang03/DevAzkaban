@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News &amp; Announcement"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/hack_regular"
+        android:gravity="center"
+        android:paddingTop="10dp" />
+</RelativeLayout>

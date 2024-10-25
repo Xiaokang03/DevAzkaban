@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/hive"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginLeft="10dp"
+            android:text="Welcome to"
+            android:fontFamily="@font/typo_round"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="#194f82"/>
+
+        <TextView
+            android:id="@+id/hive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcome"
+            android:layout_marginLeft="10dp"
+            android:text="Hive"
+            android:fontFamily="@font/designer"
+            android:textStyle="bold"
+            android:textSize="60dp"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hive"
+            android:layout_marginLeft="15dp"
+            android:text="Register to start your journey"
+            android:fontFamily="@font/hack_regular"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_below="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:fontFamily="@font/hack_regular"
+            android:hint="Full Name"
+            android:background="@drawable/edittext_style"/>
+        <TextView
+            android:id="@+id/gender"
+            android:layout_below="@id/fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hack_regular"
+            android:text="Gender"/>
+
+        <RadioGroup
+            android:id="@+id/Rgender"
+            android:layout_width="401dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hack_regular"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hack_regular"
+                android:text="Female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/dateofbirth"
+            android:layout_below="@+id/Rgender"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hack_regular"
+            android:text="Date Of Birth"/>
+        <Button
+            android:id="@+id/datepick"
+            android:layout_toRightOf="@id/dateofbirth"
+            android:layout_below="@id/Rgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_style"
+            android:text="Pick Date"/>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_below="@+id/datepick"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/edittext_style"/>
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_below="@id/email"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:background="@drawable/edittext_style"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_below="@id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@drawable/edittext_style"/>
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_below="@id/password"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter Password"
+            android:background="@drawable/edittext_style"/>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/repassword"
+                android:text="Sign Up"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_style"/>
+    </RelativeLayout>
+</ScrollView>
